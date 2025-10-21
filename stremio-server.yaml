@@ -1,6 +1,6 @@
 package:
   name: stremio-server
-  version: 4.4.169
+  version: 4.20.12
   epoch: 0
   description: Proprietary streaming server component for Stremio (BitTorrent support)
   copyright:
@@ -46,7 +46,7 @@ pipeline:
       wget --timeout=30 \
         --user-agent="Wolfi-Package-Build/1.0" \
         -O "${{targets.destdir}}"/usr/share/stremio/server.js \
-        https://dl.strem.io/server.js
+        https://dl.strem.io/server/v4.20.12/desktop/server.js
 
       # Verify download succeeded
       if [ ! -s "${{targets.destdir}}"/usr/share/stremio/server.js ]; then
